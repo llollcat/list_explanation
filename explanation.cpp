@@ -57,7 +57,7 @@ void add_item(int index,char input) {
 
 // Данная функция похожа на предыдущую, но вместо создания новой связи, мы разрываем старую.
 void delete_item(int index) {
-    ++itemCounter;
+    --itemCounter;
     List *tempPointer = list;
     if (index == 0) {
         list = list->next_item_ptr;
